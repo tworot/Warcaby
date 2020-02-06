@@ -77,7 +77,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(114, 17);
             this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Pionek bije do tyłu";
+            this.checkBox1.Text = Properties.Resources.PawnCapturesBackwards;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -88,7 +88,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(150, 17);
             this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Ruch damki po przekątnej";
+            this.checkBox2.Text = Properties.Resources.KingMovesDiagonally;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
@@ -99,7 +99,7 @@
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(129, 17);
             this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "Awans w trakcie bicia";
+            this.checkBox3.Text = Properties.Resources.PromotionDuringCapture;
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
@@ -110,7 +110,7 @@
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(104, 17);
             this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Obowiązek bicia";
+            this.checkBox4.Text = Properties.Resources.MustCapture;
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
@@ -120,7 +120,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 24);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Anuluj";
+            this.button1.Text = Properties.Resources.CancelButton;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -130,7 +130,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 24);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Zapisz";
+            this.button2.Text = Properties.Resources.SaveButton;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -140,7 +140,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 24);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Zapisz i rozpocznij";
+            this.button3.Text = Properties.Resources.SaveAndStartButton;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -151,7 +151,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Szerokość planszy";
+            this.label1.Text = Properties.Resources.HorizontalSize;
             // 
             // label2
             // 
@@ -160,7 +160,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Wysokość planszy";
+            this.label2.Text = Properties.Resources.VerticalSize;
             // 
             // label3
             // 
@@ -169,7 +169,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 13);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Liczba rzędów pionów";
+            this.label3.Text = Properties.Resources.NumberOfLines;
             // 
             // Form2
             // 
@@ -192,8 +192,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.Icon = Properties.Resources.Icon;
             this.Name = "Form2";
-            this.Text = "Opcje gry";
+            this.Text = Properties.Resources.SettingsName;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

@@ -116,7 +116,7 @@ namespace Warcaby
                 stream.Close();
             }
             catch {
-                MessageBox.Show("Nie udało się zapisać gry!", "Błąd zapisu");
+                MessageBox.Show(Properties.Resources.SaveErrorBody, Properties.Resources.SaveErrorHeader);
             }
         }
 
@@ -131,7 +131,7 @@ namespace Warcaby
                 stream.Close();
             }
             catch {
-                MessageBox.Show("Nie udało się załadować gry!", "Błąd wczytywania");
+                MessageBox.Show(Properties.Resources.LoadErrorBody, Properties.Resources.LoadErrorHeader);
             }
             if (gs != null)
             {
@@ -181,13 +181,6 @@ namespace Warcaby
                 StartMoveState(isMultiCapture);
             }
         }
-
-
-
-
-
-
-
 
         public void pawnClick(object sender, EventArgs e)
         {
@@ -279,10 +272,10 @@ namespace Warcaby
 
             if (multiCapture)
             {
+                if (currentGameRules.promotionDuringCapture) PromotionCheck(); //promote before evaluating captures
                 CheckCaptures(activePawn);
                 if (isCaptureAvailable)
                 {
-                    if (currentGameRules.promotionDuringCapture) PromotionCheck();
                     wakeUpPawn(activePawn);
                     isMultiCapture = true;
                 }
@@ -291,7 +284,6 @@ namespace Warcaby
                     isMultiCapture = false;
                     PromotionCheck();
                     InitializeTurn();
-
                 }
             }
             else
@@ -306,8 +298,8 @@ namespace Warcaby
                 }
                 if (moveList.Count == 0)
                 {
-                    if (isWhiteTurn) MessageBox.Show("Wygrywa gracz czarny!", "Koniec gry");
-                    else MessageBox.Show("Wygrywa gracz biały!", "Koniec gry");
+                    if (isWhiteTurn) MessageBox.Show(Properties.Resources.VictoryBlack, Properties.Resources.VictoryHeader);
+                    else MessageBox.Show(Properties.Resources.VictoryWhite, Properties.Resources.VictoryHeader);
                 }
             }
         }
@@ -455,13 +447,13 @@ namespace Warcaby
         {
             if (isWhiteTurn)
             {
-                label1.Text = "Gracz biały";
+                label1.Text = Properties.Resources.WhitePlayer;
                 label1.ForeColor = Color.Black;
                 this.BackColor = Color.White;
             }
             else
             {
-                label1.Text = "Gracza czarny";
+                label1.Text = Properties.Resources.BlackPlayer;
                 label1.ForeColor = Color.White;
                 this.BackColor = Color.Black;
 
@@ -528,10 +520,10 @@ namespace Warcaby
         private void panel1_Resize(object sender, EventArgs e) { RefreshBoard(); }
 
         private void button1_Click(object sender, EventArgs e) { 
-            if (MessageBox.Show("Czy chcesz przerwać tą grę i rozpoczać kolejną?", "Nowa gra", MessageBoxButtons.YesNo) == DialogResult.Yes) NewGame(); }
-
+            if (MessageBox.Show(Properties.Resources.NewGameBody, Properties.Resources.NewGameHeader, MessageBoxButtons.YesNo) == DialogResult.Yes) NewGame(); }
+        
         private void Form1_FormClosing(object sender, FormClosingEventArgs e) {
-            if (MessageBox.Show("Czy chcesz wyjść z gry?", "Wyjście", MessageBoxButtons.YesNo) == DialogResult.No) e.Cancel = true; }
+            if (MessageBox.Show(Properties.Resources.ExitBody, Properties.Resources.ExitHeader, MessageBoxButtons.YesNo) == DialogResult.No) e.Cancel = true; }
 
         public void optionsFormToNull() { optionsForm = null; }
 
@@ -548,9 +540,9 @@ namespace Warcaby
         private void button3_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Title = "Zapisz grę";
-            saveFileDialog.DefaultExt = "wrcb";
-            saveFileDialog.Filter = "Zapisy gry (*.wrcb)|*.wrcb|Wszystkie pliki (*.*)|*.*";
+            saveFileDialog.Title = Properties.Resources.SaveGameHeader;
+            saveFileDialog.DefaultExt = Properties.Resources.DialogDefaultExt;
+            saveFileDialog.Filter = Properties.Resources.DialogFilter;
             saveFileDialog.CheckPathExists = true;
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -561,12 +553,12 @@ namespace Warcaby
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Czy chcesz opuścić bieżącą grę?", "Wczytaj grę", MessageBoxButtons.YesNo) == DialogResult.Yes) { 
+            if (MessageBox.Show(Properties.Resources.NewGameHeader, Properties.Resources.LoadGameHeader, MessageBoxButtons.YesNo) == DialogResult.Yes) { 
                 OpenFileDialog openFileDialog = new OpenFileDialog();
 
-                openFileDialog.Title = "Wczytaj grę";
-                openFileDialog.DefaultExt = "wrcb";
-                openFileDialog.Filter = "Zapisy gry (*.wrcb)|*.wrcb|Wszystkie pliki (*.*)|*.*";
+                openFileDialog.Title = Properties.Resources.LoadGameHeader;
+                openFileDialog.DefaultExt = Properties.Resources.DialogDefaultExt;
+                openFileDialog.Filter = Properties.Resources.DialogFilter;
                 openFileDialog.CheckFileExists = true;
                 openFileDialog.CheckPathExists = true;
                 if (openFileDialog.ShowDialog() == DialogResult.OK)

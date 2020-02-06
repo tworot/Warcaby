@@ -53,11 +53,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form11.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Form1.resx</DependentUpon>
-    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,9 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\%24this.Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

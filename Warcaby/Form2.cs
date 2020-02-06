@@ -37,13 +37,13 @@ namespace Warcaby
             checkBox2.Checked = tempGameRules.kingMovesDiagonally;
             checkBox3.Checked = tempGameRules.promotionDuringCapture;
             checkBox4.Checked = tempGameRules.mustCapture;
-            this.Text = "Opcje gry";
+            this.Text = Properties.Resources.SettingsName;
             button2.Enabled = false;
         }
 
         private void SomethingChanged() {
 
-            this.Text = "*Opcje gry";
+            this.Text = Properties.Resources.SettingsNameEdited;
             button2.Enabled = true;
         }
 
@@ -110,14 +110,14 @@ namespace Warcaby
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Text = "Opcje gry";
+            this.Text = Properties.Resources.SettingsName;
             button2.Enabled = false;
             tempGameRules.SaveRules();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Czy chcesz przerwać tą grę i rozpoczać kolejną?", "Nowa gra?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show(Properties.Resources.NewGameBody, Properties.Resources.NewGameHeader, MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 tempGameRules.SaveRules();
                 this.Close();

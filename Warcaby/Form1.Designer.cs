@@ -56,7 +56,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(78, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "&Nowa gra";
+            this.button1.Text = Properties.Resources.NewGameButton;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -69,7 +69,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 26);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Gracz biały";
+            this.label1.Text = Properties.Resources.WhitePlayer;
             // 
             // button2
             // 
@@ -78,7 +78,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 23);
             this.button2.TabIndex = 3;
-            this.button2.Text = "&Opcje gry";
+            this.button2.Text = Properties.Resources.OptionsButton;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -89,7 +89,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(78, 23);
             this.button3.TabIndex = 0;
-            this.button3.Text = "Zapi&sz";
+            this.button3.Text = Properties.Resources.SaveButton;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -100,7 +100,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(78, 23);
             this.button4.TabIndex = 1;
-            this.button4.Text = "&Wczytaj ";
+            this.button4.Text = Properties.Resources.LoadButton;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -115,11 +115,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.panel1); 
+            this.Icon = Properties.Resources.Icon;
             this.MinimumSize = new System.Drawing.Size(508, 571);
             this.Name = "Form1";
-            this.Text = "Warcaby";
+            this.Text = Properties.Resources.MainWindowName;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

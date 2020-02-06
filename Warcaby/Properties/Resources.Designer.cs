@@ -81,12 +81,300 @@ namespace Warcaby.Properties {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Gracz czarny.
+        /// </summary>
+        public static string BlackPlayer {
+            get {
+                return ResourceManager.GetString("BlackPlayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu &amp;Anuluj.
+        /// </summary>
+        public static string CancelButton {
+            get {
+                return ResourceManager.GetString("CancelButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu wrcb.
+        /// </summary>
+        public static string DialogDefaultExt {
+            get {
+                return ResourceManager.GetString("DialogDefaultExt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisy gry (*.wrcb)|*.wrcb|Wszystkie pliki (*.*)|*.*.
+        /// </summary>
+        public static string DialogFilter {
+            get {
+                return ResourceManager.GetString("DialogFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czy chcesz wyjść z gry?.
+        /// </summary>
+        public static string ExitBody {
+            get {
+                return ResourceManager.GetString("ExitBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wyjście.
+        /// </summary>
+        public static string ExitHeader {
+            get {
+                return ResourceManager.GetString("ExitHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Szerokość planszy.
+        /// </summary>
+        public static string HorizontalSize {
+            get {
+                return ResourceManager.GetString("HorizontalSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Icon podobny do zasobu (Ikona).
         /// </summary>
-        public static System.Drawing.Icon WarcabyIcon {
+        public static System.Drawing.Icon Icon {
             get {
-                object obj = ResourceManager.GetObject("WarcabyIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("Icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Ruch damki po przekątnej.
+        /// </summary>
+        public static string KingMovesDiagonally {
+            get {
+                return ResourceManager.GetString("KingMovesDiagonally", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu &amp;Wczytaj.
+        /// </summary>
+        public static string LoadButton {
+            get {
+                return ResourceManager.GetString("LoadButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się załadować gry!.
+        /// </summary>
+        public static string LoadErrorBody {
+            get {
+                return ResourceManager.GetString("LoadErrorBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Błąd wczytywania.
+        /// </summary>
+        public static string LoadErrorHeader {
+            get {
+                return ResourceManager.GetString("LoadErrorHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wczytaj grę.
+        /// </summary>
+        public static string LoadGameHeader {
+            get {
+                return ResourceManager.GetString("LoadGameHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Warcaby.
+        /// </summary>
+        public static string MainWindowName {
+            get {
+                return ResourceManager.GetString("MainWindowName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Obowiązek bicia.
+        /// </summary>
+        public static string MustCapture {
+            get {
+                return ResourceManager.GetString("MustCapture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Czy chcesz opuścić bieżącą grę?.
+        /// </summary>
+        public static string NewGameBody {
+            get {
+                return ResourceManager.GetString("NewGameBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu &amp;Nowa gra.
+        /// </summary>
+        public static string NewGameButton {
+            get {
+                return ResourceManager.GetString("NewGameButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nowa gra.
+        /// </summary>
+        public static string NewGameHeader {
+            get {
+                return ResourceManager.GetString("NewGameHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Liczba rzędów pionów.
+        /// </summary>
+        public static string NumberOfLines {
+            get {
+                return ResourceManager.GetString("NumberOfLines", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu &amp;Opcje gry.
+        /// </summary>
+        public static string OptionsButton {
+            get {
+                return ResourceManager.GetString("OptionsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Pionek bije do tyłu.
+        /// </summary>
+        public static string PawnCapturesBackwards {
+            get {
+                return ResourceManager.GetString("PawnCapturesBackwards", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Awans w trakcie bicia.
+        /// </summary>
+        public static string PromotionDuringCapture {
+            get {
+                return ResourceManager.GetString("PromotionDuringCapture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisz i &amp;rozpocznij.
+        /// </summary>
+        public static string SaveAndStartButton {
+            get {
+                return ResourceManager.GetString("SaveAndStartButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapi&amp;sz.
+        /// </summary>
+        public static string SaveButton {
+            get {
+                return ResourceManager.GetString("SaveButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nie udało się zapisać gry!.
+        /// </summary>
+        public static string SaveErrorBody {
+            get {
+                return ResourceManager.GetString("SaveErrorBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Błąd zapisu.
+        /// </summary>
+        public static string SaveErrorHeader {
+            get {
+                return ResourceManager.GetString("SaveErrorHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Zapisz grę.
+        /// </summary>
+        public static string SaveGameHeader {
+            get {
+                return ResourceManager.GetString("SaveGameHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Opcje gry.
+        /// </summary>
+        public static string SettingsName {
+            get {
+                return ResourceManager.GetString("SettingsName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu *Opcje gry.
+        /// </summary>
+        public static string SettingsNameEdited {
+            get {
+                return ResourceManager.GetString("SettingsNameEdited", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wysokość planszy.
+        /// </summary>
+        public static string VerticalSize {
+            get {
+                return ResourceManager.GetString("VerticalSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wygrywa gracz czarny!.
+        /// </summary>
+        public static string VictoryBlack {
+            get {
+                return ResourceManager.GetString("VictoryBlack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Koniec gry.
+        /// </summary>
+        public static string VictoryHeader {
+            get {
+                return ResourceManager.GetString("VictoryHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wygrywa gracz biały!.
+        /// </summary>
+        public static string VictoryWhite {
+            get {
+                return ResourceManager.GetString("VictoryWhite", resourceCulture);
             }
         }
         
@@ -107,6 +395,15 @@ namespace Warcaby.Properties {
             get {
                 object obj = ResourceManager.GetObject("whitePawn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Gracz biały.
+        /// </summary>
+        public static string WhitePlayer {
+            get {
+                return ResourceManager.GetString("WhitePlayer", resourceCulture);
             }
         }
     }
