@@ -71,6 +71,7 @@ namespace Warcaby
                 else this.BackgroundImage = Properties.Resources.blackKing;
             else if (this.isWhite) this.BackgroundImage = Properties.Resources.whitePawn;
             else this.BackgroundImage = Properties.Resources.blackPawn;
+            
         }
     }
     
