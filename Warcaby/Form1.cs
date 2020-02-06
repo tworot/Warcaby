@@ -370,7 +370,7 @@ namespace Warcaby
                 moveList.Add(new Move(sourcePawn, sourcePawn.horizontal + directionHorizontal, sourcePawn.vertical + directionVertical, capturablePawn));
             }
         }
-
+        
         public void CheckMoves(Pawn p) {
             if (p.isKing)
             {
@@ -553,7 +553,7 @@ namespace Warcaby
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(Properties.Resources.NewGameHeader, Properties.Resources.LoadGameHeader, MessageBoxButtons.YesNo) == DialogResult.Yes) { 
+            if (MessageBox.Show(Properties.Resources.NewGameBody, Properties.Resources.LoadGameHeader, MessageBoxButtons.YesNo) == DialogResult.Yes) { 
                 OpenFileDialog openFileDialog = new OpenFileDialog();
 
                 openFileDialog.Title = Properties.Resources.LoadGameHeader;
